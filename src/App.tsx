@@ -6,12 +6,22 @@ function App() {
   return (
     <div
       className={stack({
+        flex: 1,
         width: "100%",
+        minHeight: "100vh",
         alignItems: "center",
-        background: "bg"
+        background: "bg",
       })}
     >
-      <div className={css({ height: "80px", color: "text.title", background: "bg.title", fontWeight: "title" })}>
+      <div
+        className={css({
+          height: "80px",
+          width: ["100%", "80%", "60%"],
+          color: "text.title",
+          background: "bg.title",
+          fontWeight: "title",
+        })}
+      >
         <header>ヘッダー</header>
       </div>
       <div
