@@ -22,9 +22,9 @@ export default defineConfig({
           gray: {
             strong: { value: "#1A1A1A" },
             DEFAULT: { value: "#4D4D4D" },
-            weak: { value: "#767676" },
-            weaker: { value: "#999999" },
-            weakest: { value: "#F2F2F2" },
+            weak: { value: "gray.400" },
+            weaker: { value: "gray.200" },
+            weakest: { value: "gray.100" },
           },
           blue: {
             strong: { value: "#0D17C1" },
@@ -51,11 +51,30 @@ export default defineConfig({
             DEFAULT: { value: "{colors.gray.strong}" },
             title: { value: "{colors.blue.weakest}" },
           },
+          skelton: {
+            bg: { value: "{colors.gray.300}" },
+            shining: { value: "{colors.gray.200}" },
+          },
         },
 
         fontWeights: {
-          title: { value: "{fontWeights.bold}" }
+          title: { value: "{fontWeights.bold}" },
+        },
+
+        shadows: {
+          card: { value: "4px 4px 0px {colors.gray.300}" },
+        },
+
+        borders: {
+          card: { value: "3px solid {colors.gray.500}"}
         }
+      },
+
+      keyframes: {
+        shine: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
     },
   },
