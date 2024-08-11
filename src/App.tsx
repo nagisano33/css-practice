@@ -16,7 +16,8 @@ function App() {
       <div
         className={css({
           height: "80px",
-          width: ["100%", "80%", "60%"],
+          maxWidth: "1280px",
+          width: "100%",
           color: "text.title",
           background: "bg.title",
           fontWeight: "title",
