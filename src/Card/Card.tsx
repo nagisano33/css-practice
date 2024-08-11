@@ -8,8 +8,8 @@ export function Card() {
   return (
     <div
       className={css({
-        border: "3px solid #000",
-        boxShadow: "4px 4px 0px #000",
+        border: "card",
+        boxShadow: "card",
         borderRadius: "13px",
         padding: 6,
         maxWidth: "388px",
