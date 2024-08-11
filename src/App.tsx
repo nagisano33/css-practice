@@ -1,30 +1,20 @@
 import { css } from "../styled-system/css/css";
-import { stack } from "../styled-system/patterns";
+import { container } from "../styled-system/patterns";
 import { Card } from "./Card/Card";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div
-      className={stack({
+      className={container({
         flex: 1,
         width: "100%",
+        maxWidth: "1280px",
         minHeight: "100vh",
-        alignItems: "center",
         background: "bg",
       })}
     >
-      <div
-        className={css({
-          height: "80px",
-          maxWidth: "1280px",
-          width: "100%",
-          color: "text.title",
-          background: "bg.title",
-          fontWeight: "title",
-        })}
-      >
-        <header>ヘッダー</header>
-      </div>
+      <Header />
       <div
         className={css({
           display: "flex",
